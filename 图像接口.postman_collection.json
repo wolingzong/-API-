@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "1e361d29-c064-4a9e-bc83-8b2e27c3fca7",
+		"name": "图像接口",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "接受 POST 方法发来的图片或视频文件，调用核心算    法处理后返回重建的高分辨率图像或视频。",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": "类型",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cardFile",
+							"description": "图片或视频文件",
+							"type": "file",
+							"src": "/Users/wolingzong/Downloads/timg-3.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:80/upload_card",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"upload_card"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
